@@ -1,6 +1,6 @@
 from pydantic_settings import BaseSettings
 
-# ✅ TEMPORARY hardcoded fallback
+#  TEMPORARY hardcoded fallback for my testing purpose
 import os
 os.environ["GEMINI_API_KEY"] = "YOUR_API_KEY"  
 
@@ -12,6 +12,7 @@ class Settings(BaseSettings):
 
 settings = Settings()
 
-# ✅ Debug print
+#  Debug print
 
 print("DEBUG: Loaded GEMINI_API_KEY:", settings.GEMINI_API_KEY)
+
